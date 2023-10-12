@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "codekraft/oldwoo-gallery-block",
+  "title": "the woocommerce gallery bootleg",
+  "description": "A wp-block boilerplate in typescript",
+  "keywords": [
+    "WooCommerce"
+  ],
+  "category": "media",
+  "supports": {
+    "multiple": false,
+    "align": true,
+    "className": true,
+    "spacing": {
+      "margin": true,
+      "padding": true,
+      "blockGap": true
+    }
+  },
+  "usesContext": [
+    "postId",
+    "postType",
+    "queryId"
+  ],
+  "style": [ "file:./build/style-oldwoo-gallery-block-user.css" ]
+}

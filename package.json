@@ -1,0 +1,39 @@
+{
+  "name": "oldwoo-gallery-block",
+  "version": "1.0.0",
+  "files": [
+    "build/*",
+    "oldwoo-gallery-block.php",
+    "LICENSE.md",
+    "readme.txt"
+  ],
+  "scripts": {
+    "packages-update": "wp-scripts packages-update",
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "format": "wp-scripts format ./src",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "wp-env:start": "wp-env start",
+    "wp-env:stop": "wp-env stop",
+    "wp-env:destroy": "wp-env destroy",
+    "test": "jest --silent=false --coverage",
+    "plugin-zip": "wp-scripts plugin-zip"
+  },
+  "devDependencies": {
+    "@wordpress/block-editor": "^12.11.1",
+    "@wordpress/blocks": "^12.20.1",
+    "@wordpress/scripts": "^26.14.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.9.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ]
+}
